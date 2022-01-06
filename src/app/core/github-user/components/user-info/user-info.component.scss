@@ -1,0 +1,87 @@
+/*  */
+  
+.container{
+    padding: 2rem;
+    background-color: #1f2a48;
+    margin:1rem 0;
+    border-radius: .7rem;
+    display: flex;
+    
+}
+.user-image-container{
+    width: 30%;
+}
+.user-image-container img{
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.user-info{
+    width: 70%;
+
+    
+}
+.main-info{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+.name, .username{
+    color:white;
+}
+.joined-text{
+    font-size: .95rem;
+    color:#9da5bf;
+}
+.biography{
+    color:#5d6985;
+}
+.biography-container{
+    margin-bottom: 1rem;
+}
+.some-stats{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    background-color: #141c2d;
+    border-radius: .7rem;
+}
+.some-stats div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.some-stats div h3{
+    color:#9da5bf;
+    font-size: 1rem;
+}
+.some-stats div p{
+    color:white;
+    font-weight: bold;
+}
+
+.more-info {
+    margin-top: 2rem;
+    display:grid;
+    grid-template-columns: 50% 50%;
+    grid-row: auto auto;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+}
+.data-container{
+    display: flex;
+    align-items: center;
+}
+i{
+    margin-right: .7rem;
+    color: white;
+}
+.data-container p{
+    font-size: .9rem;
+    color:white;
+}

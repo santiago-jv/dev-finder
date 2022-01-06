@@ -1,0 +1,9 @@
+.container{
+    width: 100%;
+    max-width: 700px;
+    margin:auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh;
+}

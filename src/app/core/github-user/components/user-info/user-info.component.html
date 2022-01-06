@@ -1,0 +1,54 @@
+<div *ngIf="user" class="container">
+    <div class="user-image-container">
+        <img [src]="user.avatar_url" alt="user-profile-image" />
+    </div>
+    <section class="user-info">
+        <article class="main-info">
+            <div class="names">
+                <h2 class="name">{{user.name}}</h2>
+                <h4 class="username">{{user.login }}</h4>
+            </div>
+            <div class="joined">
+                <h3 class="joined-text">{{user.created_at | date}}</h3>
+            </div>
+        </article>
+        <article class="biography-container">
+            <p class="biography">
+                {{user.bio ? user.bio:'This profile has no bio'}}
+            </p>
+        </article>
+        <article class="some-stats">
+            <div class="repositories">
+                <h3>Repositories</h3>
+                <p>{{user.public_repos}}</p>
+            </div>
+            
+            <div class="followers">
+                <h3>Followers</h3>
+                <p>{{user.followers}}</p>
+            </div>
+            <div class="following">
+                <h3>Following</h3>
+                <p>{{user.following}}</p>
+            </div>
+        </article>
+        <article class="more-info">
+            <div class="data-container">
+                <i class="fas fa-map-marker-alt"></i>
+                <p>{{user.location}}</p>
+            </div>
+            <div class="data-container">
+                <i class="fas fa-link"></i>
+                <p>{{user.blog ? user.blog : 'Not Available'}}</p>
+            </div>
+            <div class="data-container">
+                <i class="fab fa-twitter"></i>
+                <p>{{user.twitter_username?user.twitter_username : 'Not Available'}}</p>
+            </div>
+            <div class="data-container">
+                <i class="fas fa-building"></i>
+                <p>{{user.company?user.company:'Not Available'}}</p>
+            </div>
+        </article>
+    </section>
+</div>
