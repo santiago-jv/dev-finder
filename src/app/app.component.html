@@ -1,5 +1,6 @@
 <div class="container">
   <app-header></app-header>
   <app-searcher (onSearch)="search($event)"></app-searcher>
-  <app-user-info [user]="user"></app-user-info>
+  <app-user-info [loading]="loading" [user]="user"></app-user-info>
 </div>
+<lib-toastify-toast-container [pauseOnHover]="false" [position]="'bottom-right'" [iconLibrary]="'font-awesome'" ></lib-toastify-toast-container>

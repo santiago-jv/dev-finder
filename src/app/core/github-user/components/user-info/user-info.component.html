@@ -1,6 +1,6 @@
 <div *ngIf="user" class="container">
     <div class="user-image-container">
-        <img [src]="user.avatar_url" alt="user-profile-image" />
+        <img  [src]="user.avatar_url"/>
     </div>
     <section class="user-info">
         <article class="main-info">
@@ -52,3 +52,5 @@
         </article>
     </section>
 </div>
+<div class="loader" *ngIf="loading"></div>
+

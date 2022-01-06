@@ -75,6 +75,7 @@
 }
 .data-container{
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
 }
 i{
@@ -84,4 +85,36 @@ i{
 .data-container p{
     font-size: .9rem;
     color:white;
+}
+.loader{
+    border: 4px solid rgba(0, 0, 0, .1);
+    border-left-color: transparent;
+    width: 36px;
+    height: 36px;
+    animation: spin 1s linear infinite;
+}
+@keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+  
+    100% {
+      transform: rotate(360deg);
+    }
+}
+  
+@media screen  and (max-width:768px){
+    .container{   
+        display: flex;
+        flex-direction: column;
+    }
+    .user-image-container{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 2rem;
+    }   
+    .user-info{
+        width: 100%;
+    }
 }
